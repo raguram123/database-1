@@ -1,0 +1,29 @@
+
+-- create
+CREATE TABLE ZENCLASS  (
+  studentId INTEGER ,
+  name TEXT ,
+  batch TEXT ,
+  tasks TEXT ,
+  webcode TEXT ,
+  capstone TEXT ,
+  dashboard TEXT 
+);
+
+-- insert
+INSERT INTO ZENCLASS  VALUES (0001, 'Clark', 'bw49', 'javascript','mern stack' , 'assest tool ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0002, 'Dave', 'bw49', 'javascript','mern stack' , 'assest tool ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0003, 'Ava', 'bw49', 'html','mern stack' , 'assest tool ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0001, 'nike', 'bw49', 'html','mern stack' , 'assest tool ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0002, 'colon', 'bw49', 'css','mern stack' , 'assest tool ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0003, 'willie', 'bw49', 'css','mern stack' , 'mobile app ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0001, 'james', 'bw49', 'react','mern stack' , 'game app ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0002, 'steve', 'bw49', 'react','mern stack' , 'game app ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0003, 'litin', 'bw49', 'node','mern stack' , 'trade app ', 'attendance');
+INSERT INTO ZENCLASS  VALUES (0003, 'vincent', 'bw49', 'mongodb','mern stack' , 'trade app', 'attendance');
+
+-- fetch 
+SELECT * FROM ZENCLASS WHERE batch = 'bw49';
+SELECT * FROM ZENCLASS WHERE tasks = 'react';
+SELECT * FROM ZENCLASS WHERE webcode = 'mern stack';
+SELECT * FROM ZENCLASS WHERE capstone = 'assest tool';
